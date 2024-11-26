@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Clientes - PetShop Virtual</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Cadastro de Clientes</h1>
+  <form id="clienteForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite o nome do cliente" required>
+    
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required oninput="formatarTelefone(this)">
+    
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" placeholder="Ex: Rua das Flores, 123" required>
+    
+    <button type="submit">Salvar Cliente</button>
+
+    <a href="animais.html" class="btn-cadastro">Cadastrar Animal</a>
+  </form>
+  
+  <h2>Lista de Clientes</h2>
+  <div id="listaClientes"></div>
+  
+  <script src="js/scripts.js"></script>
+</body>
+</html>
